@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link href="themes/123.css" rel="stylesheet" type="text/css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<title>Aware of Drugs</title>
+</head>
+<body>
+<div data-role="page" id="home" data-theme="a">
+  <div data-role="header" ></div>
+  
+    <div data-role="content" align="center"> <img src="image/logo.png" alt="aware of drugs"></div>
+  
+  <div data-role="content">
+  
+  <ul data-role="listview" data-inset="true" >
+	<li><a href="#page1" rel="external"> Introduce Drugs </a></li>
+	<li data-icon="grid"><a href="map.html" rel="external"> Methadone Clinics Locations </a></li>
+	<li><a href="media.html" data-icon="arrow-r"> Anti-Drug TV ads.</a></li>
+	<li><a href="poster.html" data-icon="star" rel="external">  Gallery</a></li>
+	<li><a href="profile.html" rel="external"> Profile </a></li>	
+	</ul>	
+  </div>
+  <div data-role="footer">
+    <h4></h4>
+  </div>
+</div>
+
+<!------------------------------page1----------------------------------------->
+
+<div data-role="page" id="page1" data-add-back-btn="true">
+<div data-role="content" align="center"><a href="#home"><img src="image/sublogo.png" width="300" alt="back to homepage"></a>
+<a href="index.html" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a></div>
+  <div data-role="header">
+    <h1><span style="font-size:20px">Introduce Drugs</span></h1>
+  </div>
+  <div data-role="content"></div>
+ <div role="main" class="ui-content">
+    <div class="ui-grid-b" style="height:250px">
+      <div class="ui-block-a" style="height:100%"><a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"><img src="image/amphetamine.jpg" width="180" height="180" alt="amphetamine"><br>Amphetamine</a></div>
+      <div class="ui-block-b" style="height:100%"><a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"><img src="image/cocaine.jpg" width="180" height="180" alt="cocaine"><br>Cocaine</a></div>
+      <div class="ui-block-c" style="height:100%"><a href="#myPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"><img src="image/heroin.jpg" width="180" height="180" alt="heroin"><br>Heroin</a></div>
+    </div>
+   
+    <div class="ui-grid-b" style="height:224px">
+      <div class="ui-block-a" style="height:100%"><a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"><img src="image/marijuana.jpg" width="180" height="180" alt="marijuana"><br>Marijuana</a></div>
+      <div class="ui-block-b" style="height:100%"><a href="#myPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"><img src="image/morphine.jpg" width="180" height="180" alt="morphine"><br>Morphine</a></div>
+      <div class="ui-block-c" style="height:100%"><a href="#myPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"><img src="image/opium.jpg"  width="180" height="180" alt="opium"><br>Opium</a></div>
+    </div>
+  </div>
+ 
+    <div data-role="popup" id="myPopup" class="ui-content" style="width:300px">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <p><b>Side effects:</b> the drug craving, restlessness, yawning, tears, sweat, runny nose, sweating, insomnia, anorexia, diarrhea, nausea, vomiting, muscle pain</p>
+    </div>
+       <div data-role="popup" id="myPopup1" class="ui-content" style="width:300px">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <p><b>Side effects:</b> Nonsense, disorientation, uncoordinated movements, loss of libido or sexual performance</p>
+    </div>
+       <div data-role="popup" id="myPopup2" class="ui-content" style="width:300px">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <p><b>Side effects:</b> Nausea, vomiting, dizziness, trance, anxiety, itching, hives, constipation, biliary spasm</p>
+      <p><span style="font-size:18px"><b>Toxicity of morphine 10 times</b></span></p>
+    </div>
+       <div data-role="popup" id="myPopup3" class="ui-content" style="width:300px">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <p><b>Side effects:</b> Memory, learning and cognitive decline, weight gain, reduced immunity, infertility, decreased sperm, decreased sperm motility and indifference to matters surrounding the "lack of motivation syndrome"</p>
+    </div>
+       <div data-role="popup" id="myPopup4" class="ui-content" style="width:300px">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <p><b>Side effects:</b> Involuntary lockjaw, nausea, vomiting, blurred vision, Rapid Eye Movement, weakness, chills or sweating</p>
+    </div>
+       <div data-role="popup" id="myPopup5" class="ui-content" style="width:300px">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <p><b>Side effects:</b> Headache, nausea, weakness, anxiety, sweating, tremors, abdominal pain, and even fever, convulsions, coma and death</p>
+    </div>
+  </div>
+    
+  
+  <div data-role="footer">
+    <h4></h4>
+</div>
+<!---------------------------------page1------------------------------>
+
+
+
+<div data-role="page" id="page2">
+<div data-role="content" align="center"><a href="#home"><img src="image/sublogo.png" width="300" alt="back to homepage"></a>
+  <div data-role="header">
+    <h1>page2</h1>
+  </div>
+  <div data-role="content">page2</div>
+  <div data-role="footer">
+    <h4>page2</h4>
+  </div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>

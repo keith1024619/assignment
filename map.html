@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aware of Drugs</title>
+<link rel="stylesheet" href="themes/123.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link href="themes/123.css" rel="stylesheet" type="text/css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCfhM6NYoVLzRN5c0oLz8gIzbZXG8uPL6g"></script>
+<script>
+<!---new google.maps.LatLng(22.2849444,114.1411979),--->
+function initialize()
+{
+var cent = { lat: 22.2849444, lng: 114.1411979 };
+var cent1 = { lat: 22.2771269, lng: 114.1709863 };
+var cent2 = { lat: 22.3160479, lng: 114.175203 };
+var cent3 = { lat: 22.3324221, lng: 114.1954953 };
+var cent4 = { lat: 22.3267353, lng: 114.1616381 };
+var cent5 = { lat: 22.3704626, lng: 114.1154883 };
+var cent6 = { lat: 22.2079851, lng: 114.0313955 };
+var cent7 = { lat: 22.2764094, lng: 114.2282642 };
+var cent8 = { lat: 22.3081258, lng: 114.1855467 };
+var cent9 = { lat: 22.3304983, lng: 114.1890518 };
+var cent10 = { lat: 22.5052418, lng: 114.1291217 };
+var cent11 = { lat: 22.4539897, lng: 114.1655297 };
+var cent12 = { lat: 22.3996635, lng: 113.9756351 };
+var cent13 = { lat: 22.4454277, lng: 114.0229926 };
+
+var mapProp = {
+  center:cent,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp1 = {
+  center:cent1,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp2 = {
+  center:cent2,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };  
+var mapProp3 = {
+  center:cent3,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };  
+var mapProp4 = {
+  center:cent4,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp5 = {
+  center:cent5,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp6 = {
+  center:cent6,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp7 = {
+  center:cent7,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp8 = {
+  center:cent8,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  }; 
+var mapProp9 = {
+  center:cent9,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp10 = {
+  center:cent10,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };      
+var mapProp11 = {
+  center:cent11,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };  
+var mapProp12 = {
+  center:cent12,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var mapProp13 = {
+  center:cent13,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var map1=new google.maps.Map(document.getElementById("googleMap1"),mapProp1);
+var map2=new google.maps.Map(document.getElementById("googleMap2"),mapProp2);
+var map3=new google.maps.Map(document.getElementById("googleMap3"),mapProp3);
+var map4=new google.maps.Map(document.getElementById("googleMap4"),mapProp4);
+var map5=new google.maps.Map(document.getElementById("googleMap5"),mapProp5);
+var map6=new google.maps.Map(document.getElementById("googleMap6"),mapProp6);
+var map7=new google.maps.Map(document.getElementById("googleMap7"),mapProp7);
+var map8=new google.maps.Map(document.getElementById("googleMap8"),mapProp8);
+var map9=new google.maps.Map(document.getElementById("googleMap9"),mapProp9);
+var map10=new google.maps.Map(document.getElementById("googleMap10"),mapProp10);
+var map11=new google.maps.Map(document.getElementById("googleMap11"),mapProp11);
+var map12=new google.maps.Map(document.getElementById("googleMap12"),mapProp12);
+var map13=new google.maps.Map(document.getElementById("googleMap13"),mapProp13);
+
+
+
+var marker=new google.maps.Marker({
+	position:cent,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker1=new google.maps.Marker({
+	position:cent1,
+	animation:google.maps.Animation.BOUNCE
+	});	
+var marker2=new google.maps.Marker({
+	position:cent2,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker3=new google.maps.Marker({
+	position:cent3,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker4=new google.maps.Marker({
+	position:cent4,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker5=new google.maps.Marker({
+	position:cent5,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker6=new google.maps.Marker({
+	position:cent6,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker7=new google.maps.Marker({
+	position:cent7,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker8=new google.maps.Marker({
+	position:cent8,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker9=new google.maps.Marker({
+	position:cent9,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker10=new google.maps.Marker({
+	position:cent10,
+	animation:google.maps.Animation.BOUNCE
+	});
+var marker11=new google.maps.Marker({
+	position:cent11,
+	animation:google.maps.Animation.BOUNCE
+	});	
+var marker12=new google.maps.Marker({
+	position:cent12,
+	animation:google.maps.Animation.BOUNCE
+	});	
+var marker13=new google.maps.Marker({
+	position:cent13,
+	animation:google.maps.Animation.BOUNCE
+	});		
+	
+marker.setMap(map);
+marker1.setMap(map1);
+marker2.setMap(map2);
+marker3.setMap(map3);
+marker4.setMap(map4);
+marker5.setMap(map5);
+marker6.setMap(map6);
+marker7.setMap(map7);
+marker8.setMap(map8);
+marker9.setMap(map9);
+marker10.setMap(map10);
+marker11.setMap(map11);
+marker12.setMap(map12);
+marker13.setMap(map13);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+</script>
+
+
+</head>
+<body>
+
+<div data-role="page" id="map" data-add-back-btn="true">
+<div data-role="content" align="center" ><a href="index.html"><img src="image/sublogo.png" width="300" alt="back to homepage"></a>
+<a href="index.html" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+  </div>
+   <div data-role="header">
+    <h1>Methadone Clinics Locations</h1>
+  </div>
+<div data-role="main" class="ui-content">
+    <form class="ui-filterable">
+      <input id="myFilter" data-type="search" placeholder="Search for Clinics Names">
+    </form>
+    <ul data-role="listview" data-filter="true" data-input="#myFilter" >
+      <li><a href="#Cheung Chau Methadone Clinic">Cheung Chau Methadone Clinic</a></li>
+      <li><a href="#Eastern Street Methadone Clinic">Eastern Street Methadone Clinic</a></li>
+      <li><a href="#Ho Man Tin Methadone Clinic">Ho Man Tin Methadone Clinic</a></li>
+      <li><a href="#Hung Hom Methadone Clinic">Hung Hom Methadone Clinic</a></li>
+      <li><a href="#Lady Trench Methadone Clinic">Lady Trench Methadone Clinic</a></li>
+      <li><a href="#Lee Kee Methadone Clinic">Lee Kee Methadone Clinic</a></li>
+      <li><a href="#Robert Black Methadone Clinic">Robert Black Methadone Clinic</a></li> 
+      <li><a href="#Shau Kei Wan Methadone Clinic">Shau Kei Wan Methadone Clinic</a></li>
+      <li><a href="#Sham Shui Po Methadone Clinic">Sham Shui Po Methadone Clinic</a></li>     
+      <li><a href="#Shek Wu Hui Methadone Clinic">Shek Wu Hui Methadone Clinic</a></li>	
+      <li><a href="#Tai Po Methadone Clinic">Tai Po Methadone Clinic</a></li>
+      <li><a href="#Tuen Mun Methadone Clinic">Tuen Mun Methadone Clinic</a></li>
+      <li><a href="#Violet Peel Methadone Clinic">Violet Peel Methadone Clinic</a></li>
+      <li><a href="#Yuen Long Methadone Clinic">Yuen Long Methadone Clinic</a></li>
+      <li><div id="googleMap88" style="width:0px;height:0px;"></div></li>
+    </ul>
+  </div>
+  
+  <div data-role="panel" id="Eastern Street Methadone Clinic">
+    <h2>Eastern Street Methadone Clinic</h2>
+    <p><div id="googleMap" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : 45 Eastern St, Sai Ying Pun</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+
+ <div data-role="panel" id="Violet Peel Methadone Clinic">
+    <h2>Violet Peel Methadone Clinic</h2>
+    <p><div id="googleMap1" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : G/F, 2 O'Brien Road, Wan Chai</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+  
+   <div data-role="panel" id="Ho Man Tin Methadone Clinic">
+    <h2>Ho Man Tin Methadone Clinic</h2>
+    <p><div id="googleMap2" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : 50 Princess Margaret Road, Ho Man Tin</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+  
+    <div data-role="panel" id="Robert Black Methadone Clinic">
+    <h2>Robert Black Methadone Clinic</h2>
+    <p><div id="googleMap3" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Robert Black Health Centre, 600 Prince Edward Road East, San Po Kong</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+  
+   <div data-role="panel" id="Sham Shui Po Methadone Clinic">
+    <h2>Sham Shui Po Methadone Clinic</h2>
+    <p><div id="googleMap4" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Sham Shui Po Public Dispensary, 137 Yee Kuk Street, Sham Shui Po</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+  
+   <div data-role="panel" id="Lady Trench Methadone Clinic">
+    <h2>Lady Trench Methadone Clinic</h2>
+    <p><div id="googleMap5" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Lady Trench Polyclinic, 213 Sha Tsui Road, Tsuen Wan</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+  
+   <div data-role="panel" id="Cheung Chau Methadone Clinic">
+    <h2>Cheung Chau Methadone Clinic</h2>
+    <p><div id="googleMap6" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : St. John Hospital, Cheung Chau Hospital Road, Cheung Chau</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+  
+  <div data-role="panel" id="Shau Kei Wan Methadone Clinic">
+    <h2>Shau Kei Wan Methadone Clinic </h2>
+    <p><div id="googleMap7" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Shau Kei Wan Jockey Club Clinic, 8 Chai Wan Road, Shau Kei Wan</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+  
+  <div data-role="panel" id="Hung Hom Methadone Clinic">
+    <h2>Hung Hom Methadone Clinic</h2>
+    <p><div id="googleMap8" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Hung Hom Clinic, 22 Station Lane, Hung Hom</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+  
+   <div data-role="panel" id="Lee Kee Methadone Clinic">
+    <h2>Lee Kee Methadone Clinic</h2>
+    <p><div id="googleMap9" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Lee Kee Memorial Dispensary, 99 Carpenter Road, Kowloon City</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>
+  
+ <div data-role="panel" id="Shek Wu Hui Methadone Clinic">
+    <h2>Shek Wu Hui Methadone Clinic</h2>
+    <p><div id="googleMap10" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Shek Wu Hui Jockey Club Clinic, 108 Jockey Club Road, Sheung Shui</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div>  
+  
+   <div data-role="panel" id="Tai Po Methadone Clinic">
+    <h2>Tai Po Methadone Clinic</h2>
+    <p><div id="googleMap11" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Tai Po Jockey Club Clinic, 37 Ting Kok Road, Tai Po</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div> 
+  
+  <div data-role="panel" id="Tuen Mun Methadone Clinic">
+    <h2>Tuen Mun Methadone Clinic</h2>
+    <p><div id="googleMap12" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Tuen Mun Clinic, 11 Tsing Yin Street, Tuen Mun</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div> 
+  
+  
+   <div data-role="panel" id="Yuen Long Methadone Clinic">
+    <h2>Yuen Long Methadone Clinic</h2>
+    <p><div id="googleMap13" style="width:240px;height:380px;"></div></p>
+    <p><b>Address : Yuen Long Jockey Club Health Centre, 269 Castle Peak Road, Yuen Long</b></p>
+    <p><b>Opening Hours : 1pm to 8pm</b></p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Map</a>
+  </div> 
+  
+  <div data-role="footer"></div>
+  </div>
+
+
+</body>
+</html>
